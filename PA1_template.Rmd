@@ -97,7 +97,7 @@ median_steps_fill <- median(total_day_fill, na.rm=TRUE)
 
 Imputing the missing data with this method did not change the mean total daily number of steps, but increased the median by `r median_steps_fill - median_steps`.
 
-**Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.**
+**Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday or weekend day.**
 ```{r}
 mydata_fill$date <- as.Date(mydata_fill$date)
 wd <- vector()
